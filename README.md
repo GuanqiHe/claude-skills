@@ -28,6 +28,21 @@ Download papers from arXiv by ID or search query.
 /arxiv search diffusion policy # Search and download
 ```
 
+### sync-skills
+
+Sync local skills to GitHub with **sensitive information filtering**. Before pushing, it scans all files for:
+- Hardcoded usernames/paths
+- API keys and tokens
+- Passwords and secrets
+- Email addresses and phone numbers
+- Private IPs and internal URLs
+
+**Usage:**
+```
+/sync-skills              # Check and push
+/sync-skills --check-only # Only scan, don't push
+```
+
 ## Installation
 
 Copy the desired skill folder to your Claude Code skills directory:
